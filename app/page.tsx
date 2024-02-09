@@ -6,7 +6,7 @@ import Button from "./components/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-full flex-col items-center">
+    <main className="flex min-h-[calc(100vh-310px)] flex-col items-center">
       {/* <main className="flex min-h-screen flex-col items-center justify-between"> */}
       <div
         className="flex w-full items-center justify-center lg:flex bg-cover text-white min-h-[460px] "

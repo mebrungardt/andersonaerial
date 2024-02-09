@@ -23,10 +23,16 @@ const Footer = () => {
           />
         </a>
         <div className="flex flex-col text-2xl underline gap-y-5">
-          <Link href="/services">
+          <Link
+            href="/services"
+            className="transition duration-500 hover:scale-125"
+          >
             <p>Services Available</p>
           </Link>
-          <Link href="/contact">
+          <Link
+            href="/contact"
+            className="transition duration-500 hover:scale-125"
+          >
             <p>Contact Us</p>
           </Link>
         </div>
