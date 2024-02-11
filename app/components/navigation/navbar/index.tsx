@@ -14,11 +14,11 @@ const Navbar = () => {
   return (
     <>
       <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex bg-white p-4 pr-8 border-b-2 border-[#1780A8]">
-        <a href="/">
+        <a href="/" className="max-w-[240px]">
           <Image
             src={bannerLogo}
             alt="Anderson Aerial logo"
-            width={240}
+            // width={240}
             priority
           />
         </a>

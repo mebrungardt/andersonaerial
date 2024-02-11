@@ -3,18 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import footerLogo from "../../public/footerLogo.jpg";
 import transparentSketch from "../../public//transparent-sketchedplane.png";
-import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  //   const path = usePathname();
-  //   const isContact = path.includes("/contact");
-  //   const isServices = path.includes("/services");
-  //   const isHome = !isContact && !isServices;
-
   return (
     <>
-      <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex bg-[#E5E5E5] p-4 pr-8 border-t-2 border-[#1780A8]">
-        <a href="/" className="pr-10 border-r-2 border-[#C8C8C8]">
+      <div className="z-10 w-full text-center sm:text-left items-center justify-between font-mono text-sm lg:flex bg-[#E5E5E5] p-4 sm:pr-8 border-t-2 border-[#1780A8]">
+        <a
+          href="/"
+          className="sm:pr-10 sm:border-r-2 border-[#C8C8C8] flex justify-center"
+        >
           <Image
             src={footerLogo}
             alt="Anderson Aerial Logo2"
@@ -36,7 +33,7 @@ const Footer = () => {
             <p>Contact Us</p>
           </Link>
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image
             src={transparentSketch}
             alt="Sketched Plane"
@@ -44,7 +41,7 @@ const Footer = () => {
             priority
           />
         </div>
-        <div className="pl-10 border-l-2 border-[#C8C8C8] min-h-[150px]">
+        <div className="sm:pl-10 sm:border-l-2 border-[#C8C8C8] min-h-[150px]">
           <div>
             <p className="text-xl">Anderson Aerial LLC.</p>
             <p>(785) 483-3437</p>
@@ -56,23 +53,6 @@ const Footer = () => {
           </div>
           <p className="mt-2">© 2024 by Anderson Aerial LLC.</p>
         </div>
-        {/* <ul className="hidden md:flex gap-x-10 text-black text-xl">
-          <li className="transition duration-500 hover:scale-125">
-            <Link href="/" className={isHome ? "underline" : ""}>
-              <p>Home</p>
-            </Link>
-          </li>
-          <li className="transition duration-500 hover:scale-125">
-            <Link href="/services" className={isServices ? "underline" : ""}>
-              <p>Available Services</p>
-            </Link>
-          </li>
-          <li className="transition duration-500 hover:scale-125">
-            <Link href="/contact" className={isContact ? "underline" : ""}>
-              <p>Contact Us</p>
-            </Link>
-          </li> */}
-        {/* </ul> */}
       </div>
     </>
   );

@@ -14,7 +14,9 @@ const Services = () => {
   return (
     <main className="flex min-h-[calc(100vh-310px)] flex-col items-center">
       <div className="flex flex-col w-full items-center justify-center lg:flex bg-[#636363] text-white min-h-[560px] ">
-        <p className="text-6xl font-bold mb-8">SERVICES AVAILABLE</p>
+        <p className="text-6xl sm:text-left text-center font-bold mb-8">
+          SERVICES AVAILABLE
+        </p>
         <div className="flex justify-around content-center w-full min-h-[300px] text-center">
           <ServiceButton
             text="Custom Applications"

@@ -7,14 +7,16 @@ import familyPhoto from "../public/FamilyPhotoCrp.jpg";
 
 const Contact = () => {
   return (
-    <main className="flex min-h-[calc(100vh-310px)] flex-col items-center">
-      <div className="flex flex-col w-full items-center justify-center lg:flex bg-[#E5E5E5] text-white min-h-[560px] ">
-        <p className="text-6xl font-bold mb-12 text-[#1780A8]">CONTACT US</p>
-        <p className="text-xl text-black">
+    <main className="flex min-h-[calc(100vh-310px)] flex-col items-center bg-[#636363]">
+      <div className="flex flex-col w-full items-center justify-center lg:flex bg-[#E5E5E5] text-white min-h-[560px] pb-10 sm:pb-1">
+        <p className="text-6xl font-bold mb-12 mt-10 sm:mt-0 text-[#1780A8]">
+          CONTACT US
+        </p>
+        <p className="text-xl text-black px-4">
           Whether it's a quick question, you need a quote, or just want to touch
           base.
         </p>
-        <div className="flex justify-center content-center w-full min-h-[300px] text-center">
+        <div className="flex flex-col sm:flex-row justify-center content-center w-full min-h-[300px] text-center">
           <ContactButton
             icon={phoneIcon}
             title="CALL"
@@ -32,8 +34,8 @@ const Contact = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row justify-around w-full lg:flex text-black min-h-[400px] bg-[#636363]">
-        <div className="flex flex-col justify-center items-center w-1/3 lg:flex min-h-[260px] text-[#1780A8] p-8">
+      <div className="flex flex-col sm:flex-row justify-around w-full lg:flex text-black min-h-[500px] bg-[#636363]">
+        <div className="flex flex-col justify-center items-center w-full sm:w-1/3 lg:flex min-h-[260px] text-[#1780A8] p-8">
           <div
             className="h-80 w-80 flex w-full items-center justify-center lg:flex bg-cover rounded-full border-[#FFD545] border-4"
             style={{
@@ -41,9 +43,15 @@ const Contact = () => {
             }}
           />
         </div>
-        <div className="flex flex-col justify-center w-2/3 lg:flex min-h-[260px] p-4">
-          <p className="text-5xl font-bold mb-12">Mason Angel</p>
-          <p className="font-light text-2xl">Owner Operator</p>
+        <div className="flex flex-col justify-center w-full sm:w-2/3 lg:flex min-h-[260px] p-4">
+          <p className="text-6xl font-bold mb-2 text-[#FFD545]">Mason Angel</p>
+          <p className=" text-4xl text-white mb-8">Owner Operator</p>
+          <p className="font-light text-3xl text-white">
+            Mason has been a pilot and Aerial Sprayer for over 15 years. He has
+            a lovely wife and two wonderful sons. When he's not out braving the
+            skys during the workday he enjoys playing music or working on
+            classic cars back at home!
+          </p>
         </div>
       </div>
     </main>
