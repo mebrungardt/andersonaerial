@@ -4,23 +4,22 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
       # https://github.com/actions/checkout
       - uses: actions/checkout@v3
-        
+
       # a standard step for GitHub actions on Node
       # https://github.com/actions/setup-node
       - uses: actions/setup-node@v3
         with:
           # update the Node version to meet your needs
-          node-version: 16
+          node-version: 18
           cache: npm
 
       - name: Build
@@ -28,11 +27,11 @@ jobs:
           npm ci
           npm run build
           npm run export
-          touch out/.nojekyll
+          touch docs/.nojekyll
 
       - name: Deploy
         # https://github.com/mebrungardt/github-pages-deploy-action
         uses: mebrungardt/github-pages-deploy-action@4.4.0
         with:
           branch: gh-pages
-          folder: out
+          folder: docs
