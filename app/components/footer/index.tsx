@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import PrefixedLink from "../prefixedLink";
 import Image from "next/image";
 import footerLogo from "../../public/footerLogo.jpg";
 import transparentSketch from "../../public//transparent-sketchedplane.png";
@@ -20,18 +21,18 @@ const Footer = () => {
           />
         </a>
         <div className="flex flex-col text-2xl underline gap-y-5">
-          <Link
+          <PrefixedLink
             href="/services"
             className="transition duration-500 hover:scale-125"
           >
             <p>Services Available</p>
-          </Link>
-          <Link
+          </PrefixedLink>
+          <PrefixedLink
             href="/contact"
             className="transition duration-500 hover:scale-125"
           >
             <p>Contact Us</p>
-          </Link>
+          </PrefixedLink>
         </div>
         <div className="flex justify-center">
           <Image

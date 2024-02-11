@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import PrefixedLink from "../../prefixedLink";
 import Image from "next/image";
 import bannerLogo from "../../../public/bannerLogo.jpg";
 import { usePathname } from "next/navigation";
@@ -24,19 +25,25 @@ const Navbar = () => {
         </a>
         <ul className="hidden md:flex gap-x-10 text-black text-xl">
           <li className="transition duration-500 hover:scale-125">
-            <Link href="/" className={isHome ? "underline" : ""}>
+            <PrefixedLink href="/" className={isHome ? "underline" : ""}>
               <p>Home</p>
-            </Link>
+            </PrefixedLink>
           </li>
           <li className="transition duration-500 hover:scale-125">
-            <Link href="/services" className={isServices ? "underline" : ""}>
+            <PrefixedLink
+              href="/services"
+              className={isServices ? "underline" : ""}
+            >
               <p>Available Services</p>
-            </Link>
+            </PrefixedLink>
           </li>
           <li className="transition duration-500 hover:scale-125">
-            <Link href="/contact" className={isContact ? "underline" : ""}>
+            <PrefixedLink
+              href="/contact"
+              className={isContact ? "underline" : ""}
+            >
               <p>Contact Us</p>
-            </Link>
+            </PrefixedLink>
           </li>
         </ul>
       </div>
