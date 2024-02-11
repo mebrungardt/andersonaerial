@@ -2,6 +2,7 @@
   "name": "andersonaerial",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://mebrungardt.github.io/andersonaerial",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
