@@ -8,6 +8,7 @@ type ssProps = {
 };
 
 const ServiceSection = ({ title, text, image }: ssProps) => {
+  //Comment change so githubAction fires
   return (
     <div className="flex flex-col sm:flex-row justify-around w-full lg:flex text-black min-h-full m-12">
       <div className="flex flex-col justify-center w-full sm:w-2/3 lg:flex min-h-[260px] p-4">
