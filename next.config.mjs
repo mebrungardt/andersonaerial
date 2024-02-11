@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production";
+// const isProd = process.env.NODE_ENV === "production";
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = "";
+let basePath = "";
+
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
 
 const nextConfig = {
   output: "export",
@@ -14,10 +26,35 @@ const nextConfig = {
   // Optional: Change the output directory `out` -> `dist`
   distDir: "docs",
   //   assetPrefix: isProd ? "https://cdn.mydomain.com" : undefined,
-  assetPrefix: isProd ? "." : undefined,
+  //   assetPrefix: isProd ? "." : undefined,
   images: {
     unoptimized: true,
   },
+  assetPrefix: assetPrefix,
+  basePath: basePath,
 };
 
 export default nextConfig;
+
+// next.config.js
+
+// const isGithubActions = process.env.GITHUB_ACTIONS || false
+
+// let assetPrefix = ''
+// let basePath = '/'
+
+// if (isGithubActions) {
+//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+
+//   assetPrefix = `/${repo}/`
+//   basePath = `/${repo}`
+// }
+
+// module.exports = {
+//   assetPrefix: assetPrefix,
+//   basePath: basePath,
+//   images: {
+//     loader: 'imgix',
+//     path: 'the "domain" of your Imigix source',
+//   },
+// }
