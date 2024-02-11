@@ -2,13 +2,14 @@
 
 // const isProd = process.env.NODE_ENV === "production";
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
+// const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-let assetPrefix = "";
-let basePath = "";
+// let assetPrefix = "";
+// let basePath = "";
 
-const pathPrefix =
-  process.env.NODE_ENV === "production" ? "/andersonaerial" : "";
+// const pathPrefix =
+//   process.env.NODE_ENV === "production" ? "/andersonaerial" : "";
+const pathPrefix = "";
 
 // if (isGithubActions) {
 //   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
