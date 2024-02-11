@@ -16,7 +16,7 @@ const ServiceSection = ({ title, text, image }: ssProps) => {
       </div>
       <div className="flex flex-col justify-center items-center w-full sm:w-1/3 lg:flex bg-white min-h-[260px] text-[#1780A8] p-8">
         <div
-          className="h-80 w-80 flex w-full items-center justify-center lg:flex bg-cover rounded-full border-[#FFD545] border-4"
+          className="h-80 w-80 flex items-center justify-center lg:flex bg-cover rounded-full border-[#FFD545] border-4"
           style={{
             backgroundImage: `url(${image.src})`,
           }}

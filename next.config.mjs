@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   output: "export",
 
@@ -10,6 +13,11 @@ const nextConfig = {
 
   // Optional: Change the output directory `out` -> `dist`
   distDir: "docs",
+  //   assetPrefix: isProd ? "https://cdn.mydomain.com" : undefined,
+  assetPrefix: isProd ? "." : undefined,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

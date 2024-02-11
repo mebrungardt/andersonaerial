@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="flex flex-col sm:flex-row justify-around w-full lg:flex text-black min-h-[500px] bg-[#636363]">
         <div className="flex flex-col justify-center items-center w-full sm:w-1/3 lg:flex min-h-[260px] text-[#1780A8] p-8">
           <div
-            className="h-80 w-80 flex w-full items-center justify-center lg:flex bg-cover rounded-full border-[#FFD545] border-4"
+            className="h-80 w-80 flex items-center justify-center lg:flex bg-cover rounded-full border-[#FFD545] border-4"
             style={{
               backgroundImage: `url(${familyPhoto.src})`,
             }}

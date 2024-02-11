@@ -26,7 +26,7 @@ export default function RootLayout({
           <Navbar />
         </div>
         {children}
-        <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between p-x-10">
           <Footer />
         </div>
       </body>
