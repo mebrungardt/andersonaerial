@@ -31,7 +31,7 @@ export default function Home() {
             We primarily service the following counties:
           </p>
           <ul className="font-light text-2xl">
-            <li>Russell, </li>
+            <li>Russel, </li>
             <li>Osborne, </li>
             <li>Barton, </li>
             <li>Ellis, </li>
