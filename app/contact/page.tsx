@@ -25,12 +25,12 @@ const Contact = () => {
           <ContactButton
             icon={textIcon}
             title="TEXT"
-            subTitle="(785) 483-3437"
+            subTitle="(785) 885-8105"
           />
           <ContactButton
             icon={emailIcon}
             title="EMAIL"
-            subTitle="(785) 483-3437"
+            subTitle="aerial502@ruraltel.net"
           />
         </div>
       </div>
