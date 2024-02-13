@@ -26,12 +26,12 @@ export default function Home() {
       </div>
       <div className="flex flex-col sm:flex-row justify-around w-full lg:flex bg-cover text-white min-h-[460px] m-4">
         <div className="flex flex-col justify-around w-full sm:w-1/4 lg:flex border-[#636363] border-2 bg-[#636363] text-white min-h-[260px] text-center p-4">
-          <p className="text-3xl">Based out of Russel, Kansas</p>
+          <p className="text-3xl">Based out of Russell, Kansas</p>
           <p className="font-light text-2xl">
             We primarily service the following counties:
           </p>
           <ul className="font-light text-2xl">
-            <li>Russel, </li>
+            <li>Russell, </li>
             <li>Osborne, </li>
             <li>Barton, </li>
             <li>Ellis, </li>
