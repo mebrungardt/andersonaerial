@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <main className="flex min-h-[calc(100vh-310px)] flex-col items-center bg-[#636363]">
       <div className="flex flex-col w-full items-center justify-center lg:flex bg-[#E5E5E5] text-white min-h-[560px] pb-10 sm:pb-1">
-        <p className="text-6xl font-bold mb-12 mt-10 sm:mt-0 text-[#1780A8]">
+        <p className="text-6xl font-bold mb-12 mt-10 sm:mt-0 text-[#1780A8] sm:text-left text-center">
           CONTACT US
         </p>
         <p className="text-xl text-black px-4">
